@@ -36,7 +36,6 @@ body {
 
 .left-panel {
     display: flex;
-    /* background-color: yellow; */
     flex-direction: column;
     max-height: 100vh;
     padding: 3rem 0rem;
@@ -47,7 +46,6 @@ body {
 
 .right-panel {
     padding-left: 1rem;
-    /* background-color: red; */
     padding: 3rem 0rem;
     width: 55%;
     height: 2000px;
@@ -58,3 +56,55 @@ body {
     justify-content: center;
     position: relative;
 }
+
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience {
+    display: flex;
+    width: 100%;
+    margin: 1rem 0rem;
+}
+
+.duration {
+    display: flex;
+}
+
+.experience-main {
+    display: flex;
+    padding-left: 3rem;
+    flex-direction: column;
+}
+
+.experience-main .job-title {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.experience-main .job-description {
+    padding-top: 1rem;
+}
+
+.tech-stack {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.tech-stack .tech {
+    display: flex;
+    background-color: black;
+    height: 1rem;
+    margin: 0.25rem;
+    padding: 7px;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.tech-stack .tech:first-child {
+    margin-left: 0px;
+}
+
