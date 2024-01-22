@@ -1,0 +1,38 @@
+@font-face {
+    font-family: montserrat;
+    src: url('Montserrat-VariableFont_wght.ttf')foramt('truetype');
+}
+
+html{
+    font-family: montserrat,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+body {
+    background-color: #0F172A;
+    color: rgb(148 163 184)
+}
+
+.primary {
+    /* background: white; */
+    min-height: 100vh;
+    max-width: 1280px;
+    padding: 3rem 1.5rem;
+}
+
+.name, .occupation-title, .personal-introduction  {
+    margin: 10px 0px;
+}
+
+.name {
+    color: white;
+}
+
+.occupation-title {
+    color: white;
+    font-weight:400;
+}
+
+.personal-introduction {
+
+}
+
