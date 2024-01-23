@@ -65,7 +65,7 @@ body {
     margin-top: 5rem;
 }
 
-.experience {
+.experience, .project {
     display: flex;
     position: relative;
     width: 100%;
@@ -81,18 +81,25 @@ body {
     padding-top: 0.3rem;
 }
 
-.experience-main {
+.thumbnail {
+    display: flex;
+    justify-content: center;
+    width: 45rem;
+    padding-top: 0.3rem;
+}
+
+.experience-main, .project-main {
     display: flex;
     padding-left: 1rem;
     flex-direction: column;
 }
 
-.experience-main .job-title {
+.experience-main .job-title, .project-main .project-title {
     color: white;
     font-size: 1.2rem;
 }
 
-.experience-main .job-description {
+.experience-main .job-description, .project-main .project-description {
     padding-top: 1rem;
 }
 
@@ -141,3 +148,8 @@ body {
     box-shadow: 10px 5px 5px black;
 }
 
+img.thumbnail-img {
+    width: 100px;
+    height: 100px;
+    border: 0.25rem solid white;
+}
