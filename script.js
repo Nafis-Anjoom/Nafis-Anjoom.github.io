@@ -52,6 +52,33 @@ const personalProjects = [
     }
 ]
 
+const academicProjects = [
+    {
+        title: "WaveForm",
+        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects.",
+        stack: ["Javascript", "React", ".NET Core", "Typescript"],
+        thumbnail: "thumbnail.png"
+    },
+    {
+        title: "WaveForm",
+        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects.",
+        stack: ["Javascript", "React", ".NET Core", "Typescript"],
+        thumbnail: "thumbnail.png"
+    },
+    {
+        title: "WaveForm",
+        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects.",
+        stack: ["Javascript", "React", ".NET Core", "Typescript"],
+        thumbnail: "thumbnail.png"
+    },
+    {
+        title: "WaveForm",
+        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects.",
+        stack: ["Javascript", "React", ".NET Core", "Typescript"],
+        thumbnail: "thumbnail.png"
+    }
+]
+
 function populateExperiences() {
     const experienceContainerElement = document.getElementById("experience-container");
     experiences.forEach((experience) => {
@@ -114,9 +141,9 @@ function populateExperiences() {
     });
 }
 
-function populatePersonalProjects() {
-    const personalProjectsContainerElement = document.getElementById("personalProjects-container");
-    personalProjects.forEach((project) => {
+function populateProjects(projects, section) {
+    const personalProjectsContainerElement = document.getElementById(`${section}-container`);
+    projects.forEach((project) => {
         const projectElement = document.createElement("div");
         projectElement.className = "project";
 
@@ -176,4 +203,5 @@ function populatePersonalProjects() {
 }
 
 populateExperiences();
-populatePersonalProjects();
+populateProjects(personalProjects, "personalProjects");
+populateProjects(personalProjects, "academicProjects");
