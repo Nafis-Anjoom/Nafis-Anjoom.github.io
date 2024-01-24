@@ -20,6 +20,10 @@ body, html {
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .primary {
     display: flex;
     min-height: 100vh;
@@ -45,17 +49,14 @@ body, html {
     display: flex;
     flex-direction: column;
     max-height: 100vh;
-    padding: 3rem 0rem;
-    /* temporary fix to max-height issue. THe height was greater than 100vh */
-    box-sizing: border-box;
+    padding: 5rem 0rem;
     width: 45%;
     position: sticky;
     top: 0;
 }
 
 .right-panel {
-    padding-left: 1rem;
-    padding: 3rem 0rem;
+    padding: 5rem 0rem;
     width: 55%;
 }
 
@@ -75,7 +76,7 @@ body, html {
 .experience, .project {
     display: flex;
     position: relative;
-    width: 100% - 1rem;
+    width: 100%;
     margin: 1rem 0rem;
     padding: 1rem;
     border: none;
@@ -84,19 +85,20 @@ body, html {
 .duration {
     display: flex;
     font-size: 0.8rem;
-    width: 45rem;
+    width: 25%;
     padding-top: 0.3rem;
 }
 
 .thumbnail {
     display: flex;
     justify-content: center;
-    width: 45rem;
+    width: 25%;
     padding-top: 0.3rem;
 }
 
 .experience-main, .project-main {
     display: flex;
+    width: 75%;
     padding-left: 1rem;
     flex-direction: column;
 }
@@ -112,22 +114,19 @@ body, html {
 
 .tech-stack {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 1rem;
 }
 
 .tech-stack .tech {
     display: flex;
     background-color: black;
-    height: 1rem;
-    margin: 0.25rem;
-    padding: 7px;
-    border-radius: 5px;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1000rem;
     align-items: center;
     font-size: 0.7rem;
-}
-
-.tech-stack .tech:first-child {
-    margin-left: 0px;
 }
 
 .section-header {
@@ -137,7 +136,7 @@ body, html {
     color: white;
     position: sticky;
     top: 0;
-    height: 6rem;
+    height: 8rem;
     background-color: #0F172A;
     z-index: 1000;
     display: flex;
@@ -185,12 +184,12 @@ img.thumbnail-img {
     height: 1.5rem;
 }
 
-.profile-pic img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
 .flex {
     display: flex;
+}
+
+#footer {
+    display: flex;
+    margin-top: 5rem;
+    font-size: 0.85rem;
 }
