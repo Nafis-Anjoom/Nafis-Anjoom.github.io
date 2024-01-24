@@ -68,7 +68,7 @@ body {
 .experience, .project {
     display: flex;
     position: relative;
-    width: 100%;
+    width: 100% - 1rem;
     margin: 1rem 0rem;
     padding: 1rem;
     border: none;
@@ -124,9 +124,17 @@ body {
 }
 
 .section-header {
-    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
     font-size: 1.5rem;
     color: white;
+    position: sticky;
+    top: 0;
+    height: 6rem;
+    background-color: #0F172A;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-end;
 }
 
 .acrylic {
@@ -152,4 +160,26 @@ img.thumbnail-img {
     width: 100px;
     height: 100px;
     border: 0.25rem solid white;
+}
+
+.socials a {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: inherit;
+    background: none;
+}
+
+.socials a:hover {
+    color: white;
+}
+
+.logo-svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
