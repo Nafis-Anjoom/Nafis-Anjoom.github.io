@@ -1,12 +1,21 @@
-@font-face {
-    font-family: montserrat;
-    src: url('Montserrat-VariableFont_wght.ttf')foramt('truetype');
-}
 
 html{
-    font-family: montserrat,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 17px;
     scroll-behavior: smooth;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+    }
 }
 
 body {
@@ -139,10 +148,10 @@ a {
     background-color: black;
     margin-top: 0.5rem;
     margin-right: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.6rem;
     border-radius: 1000rem;
     align-items: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .section-header {
