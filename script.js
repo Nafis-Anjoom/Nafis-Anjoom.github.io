@@ -80,24 +80,10 @@ const academicProjects = [
 ]
 
 function populateExperiences() {
-    const experienceContainerElement = document.getElementById("experience-container");
+    const experienceContainerElement = document.getElementById("professionalExperience-container");
     experiences.forEach((experience) => {
         const experienceElement = document.createElement("div");
         experienceElement.className = "experience";
-
-        const acrylicElement = document.createElement("div");
-        acrylicElement.className = "acrylic";
-
-        experienceElement.addEventListener("mouseenter", () => {
-            acrylicElement.classList.add("show");
-            experienceElement.style.cursor = "pointer";
-        });
-
-        experienceElement.addEventListener("mouseleave", () => {
-            acrylicElement.classList.remove("show");
-        });
-
-        experienceElement.appendChild(acrylicElement);
 
         const durationElement = document.createElement("div");
         durationElement.className = "duration";
@@ -147,20 +133,6 @@ function populateProjects(projects, section) {
         const projectElement = document.createElement("div");
         projectElement.className = "project";
 
-        const acrylicElement = document.createElement("div");
-        acrylicElement.className = "acrylic";
-
-        projectElement.addEventListener("mouseenter", () => {
-            acrylicElement.classList.add("show");
-            projectElement.style.cursor = "pointer";
-        });
-
-        projectElement.addEventListener("mouseleave", () => {
-            acrylicElement.classList.remove("show");
-        });
-
-        projectElement.appendChild(acrylicElement);
-
         const thumbnailContainerElement = document.createElement("div");
         thumbnailContainerElement.className = "thumbnail";
 
@@ -205,3 +177,30 @@ function populateProjects(projects, section) {
 populateExperiences();
 populateProjects(personalProjects, "personalProjects");
 populateProjects(personalProjects, "academicProjects");
+
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav a");
+
+    window.addEventListener("scroll", function() {
+        let currentSection = "";
+
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if (this.scrollY >= sectionTop && this.scrollY <= sectionTop + sectionHeight) {
+                currentSection = section.getAttribute("id");
+                console.log(currentSection);
+            }
+        });
+
+        navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").substring(1) == currentSection) {
+                link.classList.add("active");
+            }
+        });
+    });
+
+});
