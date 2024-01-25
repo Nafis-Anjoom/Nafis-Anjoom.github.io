@@ -191,7 +191,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (this.scrollY >= sectionTop && this.scrollY <= sectionTop + sectionHeight) {
                 currentSection = section.getAttribute("id");
-                console.log(currentSection);
             }
         });
 
@@ -202,5 +201,4 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-
 });
