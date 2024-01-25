@@ -98,6 +98,13 @@ function populateExperiences() {
         jobTitleElement.className = "job-title";
         jobTitleElement.innerText = experience.title;
 
+        jobTitleElement.innerHTML += `
+            <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-link-svg" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd">
+                </path>
+            </svg>
+        `;
+
         const organizationElement = document.createElement("div");
         organizationElement.className = "organization";
         organizationElement.innerText = experience.organization;
@@ -157,6 +164,13 @@ function populateProjects(projects, section) {
         const projectTitleElement = document.createElement("div");
         projectTitleElement.className = "project-title";
         projectTitleElement.innerText = project.title;
+
+        projectTitleElement.innerHTML += `
+            <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-link-svg" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd">
+                </path>
+            </svg>
+        `;
 
         const descriptionElement = document.createElement("div");
         descriptionElement.className = "project-description";
