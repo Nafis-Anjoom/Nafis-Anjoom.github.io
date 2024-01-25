@@ -83,7 +83,7 @@ function populateExperiences() {
     const experienceContainerElement = document.getElementById("professionalExperience-container");
     experiences.forEach((experience) => {
         const experienceElement = document.createElement("div");
-        experienceElement.className = "experience";
+        experienceElement.className = "card";
 
         const durationElement = document.createElement("div");
         durationElement.className = "duration";
@@ -92,10 +92,10 @@ function populateExperiences() {
         experienceElement.appendChild(durationElement);
 
         const experienceMainElement = document.createElement("div");
-        experienceMainElement.className = "experience-main";
+        experienceMainElement.className = "card-main";
 
         const jobTitleElement = document.createElement("div");
-        jobTitleElement.className = "job-title";
+        jobTitleElement.className = "card-title";
         jobTitleElement.innerText = experience.title;
 
         jobTitleElement.innerHTML += `
@@ -110,7 +110,7 @@ function populateExperiences() {
         organizationElement.innerText = experience.organization;
 
         const jobDescriptionElement = document.createElement("div");
-        jobDescriptionElement.className = "job-description";
+        jobDescriptionElement.className = "card-description";
         jobDescriptionElement.innerText = experience.description;
 
         const techStackElement = document.createElement("div");
@@ -146,7 +146,7 @@ function populateProjects(projects, section) {
     const personalProjectsContainerElement = document.getElementById(`${section}-container`);
     projects.forEach((project) => {
         const projectElement = document.createElement("div");
-        projectElement.className = "project";
+        projectElement.className = "card";
 
         const thumbnailContainerElement = document.createElement("div");
         thumbnailContainerElement.className = "thumbnail";
@@ -159,10 +159,10 @@ function populateProjects(projects, section) {
         projectElement.appendChild(thumbnailContainerElement);
 
         const projectMainElement = document.createElement("div");
-        projectMainElement.className = "project-main";
+        projectMainElement.className = "card-main";
 
         const projectTitleElement = document.createElement("div");
-        projectTitleElement.className = "project-title";
+        projectTitleElement.className = "card-title";
         projectTitleElement.innerText = project.title;
 
         projectTitleElement.innerHTML += `
@@ -173,7 +173,7 @@ function populateProjects(projects, section) {
         `;
 
         const descriptionElement = document.createElement("div");
-        descriptionElement.className = "project-description";
+        descriptionElement.className = "card-description";
         descriptionElement.innerText = project.description;
 
         const techStackElement = document.createElement("div");
