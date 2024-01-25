@@ -44,7 +44,7 @@ a {
 }
 
 h1 {
-    size: 37px;
+    font-size: 37px;
 }
 
 .primary {
@@ -55,17 +55,13 @@ h1 {
     margin: 0 auto;
 }
 
-.name, .occupation-title, .personal-introduction {
-    margin: 10px 0px;
-}
-
 .name {
     color: white;
 }
 
 .occupation-title {
     color: white;
-    font-weight:400;
+    font-weight:500;
 }
 
 .left-panel {
@@ -140,6 +136,7 @@ h1 {
 
 .experience-main .job-title, .project-main .project-title {
     color: white;
+    font-weight: 500;
     font-size: 1.2rem;
 }
 
@@ -172,7 +169,8 @@ h1 {
 .section-header {
     padding-bottom: 1rem;
     border-bottom: 1px solid white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 550;
     color: white;
     position: sticky;
     top: -1px;
@@ -184,7 +182,7 @@ h1 {
 }
 
 img.thumbnail-img {
-    align-self: center;
+    align-self: baseline;
     width: 150px;
     height: auto;
     border: 1px solid white;
@@ -195,12 +193,12 @@ img.thumbnail-img {
 }
 
 .socials a:hover {
-    color: white;
+    color: var(--primary);
 }
 
 .logo-svg {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .flex {
@@ -271,6 +269,9 @@ img.thumbnail-img {
 }
 
 @media (max-width: 630px) {
+    .project-main, .experience-main {
+        width: 100%;
+    }
     .experience, .project {
         padding: 1rem 0rem;
     }
