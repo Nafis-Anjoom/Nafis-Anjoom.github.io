@@ -212,9 +212,23 @@ document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav a");
 
-    window.addEventListener("scroll", function() {
-        let currentSection = "";
+    console.log(window.location.hash);
 
+    let currentSection = "";
+    if (window.location.hash == "") {
+        currentSection = "aboutMe";
+    } else {
+        currentSection = window.location.hash.substring(1);
+    }
+
+    navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").substring(1) == currentSection) {
+            link.classList.add("active");
+        }
+    });
+
+    window.addEventListener("scroll", function() {
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
