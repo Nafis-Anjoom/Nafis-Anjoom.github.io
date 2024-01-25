@@ -123,6 +123,14 @@ function populateExperiences() {
 
         experienceElement.appendChild(experienceMainElement);
 
+        experienceElement.addEventListener("mouseenter", () => {
+            jobTitleElement.classList.add("hover");
+        });
+
+        experienceElement.addEventListener("mouseleave", () => {
+            jobTitleElement.classList.remove("hover");
+        });
+
         experienceContainerElement.appendChild(experienceElement);
     });
 }
@@ -169,6 +177,14 @@ function populateProjects(projects, section) {
         projectMainElement.appendChild(techStackElement);
 
         projectElement.appendChild(projectMainElement);
+
+        projectElement.addEventListener("mouseenter", () => {
+            projectTitleElement.classList.add("hover");
+        });
+
+        projectElement.addEventListener("mouseleave", () => {
+            projectTitleElement.classList.remove("hover");
+        });
 
         personalProjectsContainerElement.appendChild(projectElement);
     });
