@@ -154,6 +154,7 @@ function populateProjects(projects, section) {
         const thumbnailImg = document.createElement("img");
         thumbnailImg.className = "thumbnail-img";
         thumbnailImg.src = project.thumbnail;
+        thumbnailImg.loading = "lazy";
         thumbnailContainerElement.appendChild(thumbnailImg);
 
         projectElement.appendChild(thumbnailContainerElement);
