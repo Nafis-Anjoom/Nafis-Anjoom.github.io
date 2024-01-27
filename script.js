@@ -19,54 +19,36 @@ const experiences = [
 
 const personalProjects = [
     {
-        title: "WaveForm",
-        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects.",
-        stack: ["Javascript", "React", ".NET Core", "Typescript"],
+        title: "LOX Interpreter",
+        description: "A complete, functional interpreter for a custom programming language, following the principles outlined in Crafting Interpreters by Bob Nystrom. Designed and implemented lexical analysis, parsing, and interpretation phases using Go.",
+        stack: ["Go"],
         thumbnail: "thumbnail.png"
     },
     {
-        title: "WaveForm",
-        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects.",
-        stack: ["Javascript", "React", ".NET Core", "Typescript"],
+        title: "TrailHound",
+        description: "A web application that allows users to create and share walking/running trails, compete with otehrs, post time, and comment on the quality of the trails.",
+        stack: ["TypeScript", "Angular", "MongoDB", "Express", "Inversify"],
         thumbnail: "thumbnail.png"
     },
     {
-        title: "WaveForm",
-        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects.",
-        stack: ["Javascript", "React", ".NET Core", "Typescript"],
-        thumbnail: "thumbnail.png"
-    },
-    {
-        title: "WaveForm",
-        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects.",
-        stack: ["Javascript", "React", ".NET Core", "Typescript"],
+        title: "Spotify Clone",
+        description: "A clone of the Spotify artist page using Tailwind CSS.",
+        stack: ["Tailwind CSS", "React", "JavaScript"],
         thumbnail: "thumbnail.png"
     }
 ]
 
 const academicProjects = [
     {
-        title: "WaveForm",
-        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects.",
-        stack: ["Javascript", "React", ".NET Core", "Typescript"],
+        title: "GroovyGraphs",
+        description: "A web application that utilizes the d3.js library to visualize the Spotify recommendation algorithm using visualizations such as dendogram, barcharts, scatterplots, and heatmaps.",
+        stack: ["TypeScript", "React", "SpotifyAPI", "D3.js"],
         thumbnail: "thumbnail.png"
     },
     {
-        title: "WaveForm",
-        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects.",
-        stack: ["Javascript", "React", ".NET Core", "Typescript"],
-        thumbnail: "thumbnail.png"
-    },
-    {
-        title: "WaveForm",
-        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects.",
-        stack: ["Javascript", "React", ".NET Core", "Typescript"],
-        thumbnail: "thumbnail.png"
-    },
-    {
-        title: "WaveForm",
-        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects.",
-        stack: ["Javascript", "React", ".NET Core", "Typescript"],
+        title: "Travel Agency Admin Page",
+        description: "Designed and implemented SQL database schema to store customer and staff information such as personal information, accomodations, trips, events, and tickets. Built A REST API and wrote SQL queries to extract key information about the business and communicate it to the front-end application.",
+        stack: ["Javascript", "React", "MySQL"],
         thumbnail: "thumbnail.png"
     }
 ]
@@ -199,13 +181,11 @@ function populateProjects(projects, section) {
 
 populateExperiences();
 populateProjects(personalProjects, "personalProjects");
-populateProjects(personalProjects, "academicProjects");
+populateProjects(academicProjects, "academicProjects");
 
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav a");
-
-    console.log(window.location.hash);
 
     let currentSection = "";
     if (window.location.hash == "") {
