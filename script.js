@@ -1,27 +1,19 @@
 const experiences = [
     {
-        startDate: "Apr 2022",
-        endDate: "May 2022",
-        title: "Software Engineer",
-        organization: "Trulioo Information Technologies",
-        stack: ["Javascript", "React", ".NET Core", "Typescript"],
-        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects."
+        startDate: "Jan 2024",
+        endDate: "Present",
+        title: "Teaching Assistant",
+        organization: "Introduction to Relational Database course @ UBC",
+        stack: ["Javascript", "TypeScript", "Java", "MySQL"],
+        description: "As a Teaching Assistant for the Intro to Relational Database course, I provide personalized guidance to students in understanding and implementing database projects. I guide students through real-world application scenarios, emphasizing the practical aspects of database management systems."
     },
     {
-        startDate: "Apr 2022",
-        endDate: "May 2022",
-        title: "Software Engineer",
+        startDate: "Sep 2020",
+        endDate: "Apr 2021",
+        title: "Junior Software Engineer (Co-op)",
         organization: "Trulioo Information Technologies",
-        stack: ["Javascript", "React", ".NET Core", "Typescript"],
-        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects."
-    },
-    {
-        startDate: "Apr 2022",
-        endDate: "May 2022",
-        title: "Software Engineer",
-        organization: "Trulioo Information Technologies",
-        stack: ["Javascript", "React", ".NET Core", "Typescript"],
-        description: "In my time as a Junior Software Engineer at Trulioo, I designed, implemented, and maintained key schemas for several applications. But when I took CPSC 304 in the 2022W term with Rachel Pottinger, I learned foundational theories and concepts such as relational algebra, normalization, functional dependencies, data mining, etc. I found these concepts very helpful in my recent projects."
+        stack: ["C#", ".NET Core", "React", "JavaScript", "Typescript", "MySQL", "AWS Lambda", "Postman"],
+        description: "As a Junior Software Engineer, I played a pivotal role in building a .NET Core web API with Hangfire for scheduling data vendor calls, analyzing responses, and storing results in a MySQL database. I collaborated with a UI designer to integrate a React front-end for user monitoring, while also creating tests using Postman, NUnit, and Moq for quality assurance. I contributed to project maintenance by migrating projects to .NET Core and maintaining dependencies, ensuring the overall reliability and performance of the applications."
     }
 ]
 
