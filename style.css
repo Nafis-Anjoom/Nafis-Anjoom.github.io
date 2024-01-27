@@ -84,6 +84,11 @@ h1 {
     padding-top: 5rem;
 }
 
+.bolded-link {
+    color: white;
+    font-weight: 500;
+}
+
 .relative {
     display: flex;
     justify-content: center;
