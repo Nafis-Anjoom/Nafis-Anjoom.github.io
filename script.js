@@ -122,16 +122,16 @@ function populateProjects(projects, section) {
         const projectElement = document.createElement("div");
         projectElement.className = "card";
 
-        const thumbnailContainerElement = document.createElement("div");
-        thumbnailContainerElement.className = "thumbnail";
+        // const thumbnailContainerElement = document.createElement("div");
+        // thumbnailContainerElement.className = "thumbnail";
 
-        const thumbnailImg = document.createElement("img");
-        thumbnailImg.className = "thumbnail-img";
-        thumbnailImg.src = project.thumbnail;
-        thumbnailImg.loading = "lazy";
-        thumbnailContainerElement.appendChild(thumbnailImg);
+        // const thumbnailImg = document.createElement("img");
+        // thumbnailImg.className = "thumbnail-img";
+        // thumbnailImg.src = project.thumbnail;
+        // thumbnailImg.loading = "lazy";
+        // thumbnailContainerElement.appendChild(thumbnailImg);
 
-        projectElement.appendChild(thumbnailContainerElement);
+        // projectElement.appendChild(thumbnailContainerElement);
 
         const projectMainElement = document.createElement("div");
         projectMainElement.className = "card-main";
