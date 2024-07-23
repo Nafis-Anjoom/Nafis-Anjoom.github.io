@@ -1,7 +1,7 @@
 const experiences = [
     {
         startDate: "Jan 2024",
-        endDate: "Present",
+        endDate: "Apr 2024",
         title: "Teaching Assistant",
         organization: "Introduction to Relational Database course @ UBC",
         stack: ["Javascript", "TypeScript", "Java", "MySQL"],
