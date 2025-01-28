@@ -19,23 +19,23 @@ const experiences = [
 
 const personalProjects = [
     {
-        title: "LOX Interpreter",
-        description: "A complete, functional interpreter for a custom programming language, following the principles outlined in Crafting Interpreters by Bob Nystrom. Designed and implemented lexical analysis, parsing, and interpretation phases using Go.",
+        title: "Falco",
+        description: "A high-performance real-time chat application built with Go and Next.js, utilizing WebSocket and a custom binary protocol for efficient message processing and reduced network payload. Key features include client-side caching, optimistic updates, and real-time user presence detection, designed to handle high-volume messaging seamlessly.",
+        stack: ["Go", "NextJS", "React", "TypeScript", "Docker", "Postgres"],
+        hyperlink: "https://github.com/Nafis-Anjoom/Falco",
+    },
+    {
+        title: "Charm Interpreter",
+        description: "A dynamically typed programming language in Go, supporting first-class functions, closures, HashMaps, and Lists. Built an efficient Pratt parser for flexible expression handling and implemented a full interpreter pipeline, including lexical analysis and a tree-walker for runtime evaluation.",
         stack: ["Go"],
-        thumbnail: "thumbnail.png"
+        hyperlink: "https://github.com/Nafis-Anjoom/Charm",
     },
     {
-        title: "TrailHound",
-        description: "A web application that allows users to create and share walking/running trails, compete with otehrs, post time, and comment on the quality of the trails.",
-        stack: ["TypeScript", "Angular", "MongoDB", "Express", "Inversify"],
-        thumbnail: "thumbnail.png"
+        title: "Pg-migrate",
+        description: "a lightweight CLI tool in Go for automated PostgreSQL schema management and version control. Features include bidirectional migrations, granular versioning, targeted rollbacks, and an intuitive interface for generating and managing migration files with ease.",
+        stack: ["Go"],
+        hyperlink: "https://github.com/Nafis-Anjoom/pg-migrate",
     },
-    {
-        title: "Spotify Clone",
-        description: "A clone of the Spotify artist page using Tailwind CSS.",
-        stack: ["Tailwind CSS", "React", "JavaScript"],
-        thumbnail: "thumbnail.png"
-    }
 ]
 
 const academicProjects = [
@@ -43,13 +43,11 @@ const academicProjects = [
         title: "GroovyGraphs",
         description: "A web application that utilizes the d3.js library to visualize the Spotify recommendation algorithm using visualizations such as dendogram, barcharts, scatterplots, and heatmaps.",
         stack: ["TypeScript", "React", "SpotifyAPI", "D3.js"],
-        thumbnail: "thumbnail.png"
     },
     {
         title: "Travel Agency Admin Page",
         description: "Designed and implemented SQL database schema to store customer and staff information such as personal information, accomodations, trips, events, and tickets. Built A REST API and wrote SQL queries to extract key information about the business and communicate it to the front-end application.",
         stack: ["Javascript", "React", "MySQL"],
-        thumbnail: "thumbnail.png"
     }
 ]
 
@@ -122,23 +120,17 @@ function populateProjects(projects, section) {
         const projectElement = document.createElement("div");
         projectElement.className = "card";
 
-        // const thumbnailContainerElement = document.createElement("div");
-        // thumbnailContainerElement.className = "thumbnail";
-
-        // const thumbnailImg = document.createElement("img");
-        // thumbnailImg.className = "thumbnail-img";
-        // thumbnailImg.src = project.thumbnail;
-        // thumbnailImg.loading = "lazy";
-        // thumbnailContainerElement.appendChild(thumbnailImg);
-
-        // projectElement.appendChild(thumbnailContainerElement);
-
         const projectMainElement = document.createElement("div");
         projectMainElement.className = "card-main";
 
         const projectTitleElement = document.createElement("div");
         projectTitleElement.className = "card-title";
         projectTitleElement.innerText = project.title;
+        if (project.hyperlink) {
+            projectTitleElement.addEventListener("click", () => {
+                window.open(project.hyperlink, '_blank');
+            });
+        }
 
         projectTitleElement.innerHTML += `
             <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-link-svg" aria-hidden="true">

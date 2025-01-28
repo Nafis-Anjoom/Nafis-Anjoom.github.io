@@ -137,6 +137,7 @@ h1 {
 
     & .card-title:hover {
         color: var(--primary);
+        cursor: pointer;
     }
     
     & .arrow-link-svg {
@@ -165,7 +166,6 @@ h1 {
     border: 0 solid white;
     border-radius: 10px;
     background-color: var(--surface);
-    cursor: pointer;
 }
 
 .section-header {
