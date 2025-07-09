@@ -120,7 +120,7 @@ h1 {
     }
 
     & .card-main {
-        width: 75%;
+        /* width: 75%; */
         padding-left: 1rem;
         flex-direction: column;
 

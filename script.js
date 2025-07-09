@@ -5,7 +5,7 @@ const experiences = [
         title: "Full-stack Software Engineer",
         organization: "Savi Finance",
         stack: ["TypeScript", "React", "MongoDB", "GraphQL", "JSON-RPC", "Redis", "Node.js", "Redux", "Jest"],
-        description: "At Savi Finance, I work as a Full-Stack Software Engineer, where I led the design and rollout of a scalable, versioned transaction category system that supports user customization and real-time syncing—migrating over 200,000 legacy records without downtime. I’ve optimized the React-based frontend through caching, request prefetching, and debouncing, cutting load times by up to 2 seconds and improving responsiveness. I also tackled critical security vulnerabilities that left the system open to DDoS attacks, strengthening the platform’s reliability. Additionally, I implemented Plaid API integration to enable over 800 users to securely link their bank accounts, sync transactions, and gain financial insights."
+        description: "At Savi Finance, I’m a Full-Stack Software Engineer where I led the rollout of a scalable, versioned transaction category system with user customization and real-time syncing, migrating 200K+ legacy records with zero downtime. I optimized the React frontend with caching, prefetching, and debouncing—reducing load times by up to 2 seconds. I also resolved critical DDoS vulnerabilities and integrated Plaid to let 800+ users securely link accounts and view financial insights."
     },
     {
         startDate: "Jan 2024",
@@ -65,11 +65,7 @@ function populateExperiences() {
         const experienceElement = document.createElement("div");
         experienceElement.className = "card";
 
-        const durationElement = document.createElement("div");
-        durationElement.className = "duration";
-        durationElement.innerText = `${experience.startDate} - ${experience.endDate}`;
-
-        experienceElement.appendChild(durationElement);
+        const durationText = `${experience.startDate} - ${experience.endDate}`;
 
         const experienceMainElement = document.createElement("div");
         experienceMainElement.className = "card-main";
@@ -87,7 +83,7 @@ function populateExperiences() {
 
         const organizationElement = document.createElement("div");
         organizationElement.className = "organization";
-        organizationElement.innerText = experience.organization;
+        organizationElement.innerText = experience.organization + " | " + durationText;
 
         const jobDescriptionElement = document.createElement("div");
         jobDescriptionElement.className = "card-description";
