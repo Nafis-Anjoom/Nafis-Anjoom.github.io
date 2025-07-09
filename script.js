@@ -41,7 +41,7 @@ const personalProjects = [
     {
         title: "Pg-migrate",
         description: "a lightweight CLI tool in Go for automated PostgreSQL schema management and version control. Features include bidirectional migrations, granular versioning, targeted rollbacks, and an intuitive interface for generating and managing migration files with ease.",
-        stack: ["Go"],
+        stack: ["Go", "Postgres"],
         hyperlink: "https://github.com/Nafis-Anjoom/pg-migrate",
     },
 ]
