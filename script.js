@@ -1,5 +1,13 @@
 const experiences = [
     {
+        startDate: "Feb 2024",
+        endDate: "present",
+        title: "Full-stack Software Engineer",
+        organization: "Savi Finance",
+        stack: ["TypeScript", "React", "MongoDB", "GraphQL", "JSON-RPC", "Redis", "Node.js", "Redux", "Jest"],
+        description: "At Savi Finance, I work as a Full-Stack Software Engineer, where I led the design and rollout of a scalable, versioned transaction category system that supports user customization and real-time syncing—migrating over 200,000 legacy records without downtime. I’ve optimized the React-based frontend through caching, request prefetching, and debouncing, cutting load times by up to 2 seconds and improving responsiveness. I also tackled critical security vulnerabilities that left the system open to DDoS attacks, strengthening the platform’s reliability. Additionally, I implemented Plaid API integration to enable over 800 users to securely link their bank accounts, sync transactions, and gain financial insights."
+    },
+    {
         startDate: "Jan 2024",
         endDate: "Apr 2024",
         title: "Teaching Assistant",
@@ -8,13 +16,13 @@ const experiences = [
         description: "As a Teaching Assistant for the Intro to Relational Database course, I provide personalized guidance to students in understanding and implementing database projects. I guide students through real-world application scenarios, emphasizing the practical aspects of database management systems."
     },
     {
-        startDate: "Sep 2020",
-        endDate: "Apr 2021",
+        startDate: "Sep 2022",
+        endDate: "Apr 2023",
         title: "Junior Software Engineer (Co-op)",
         organization: "Trulioo Information Technologies",
-        stack: ["C#", ".NET Core", "React", "JavaScript", "Typescript", "MySQL", "AWS Lambda", "Postman"],
+        stack: ["C#", ".NET Core", "React", "JavaScript", "Typescript", "MySQL", "AWS", "Postman"],
         description: "As a Junior Software Engineer, I played a pivotal role in building a .NET Core web API with Hangfire for scheduling data vendor calls, analyzing responses, and storing results in a MySQL database. I collaborated with a UI designer to integrate a React front-end for user monitoring, while also creating tests using Postman, NUnit, and Moq for quality assurance. I contributed to project maintenance by migrating projects to .NET Core and maintaining dependencies, ensuring the overall reliability and performance of the applications."
-    }
+    },
 ]
 
 const personalProjects = [
