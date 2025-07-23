@@ -1,6 +1,6 @@
 const experiences = [
     {
-        startDate: "Feb 2024",
+        startDate: "Feb 2025",
         endDate: "present",
         title: "Full-stack Software Engineer",
         organization: "Savi Finance",
